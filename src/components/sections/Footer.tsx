@@ -11,7 +11,7 @@ const empresaInfo = {
   direccion: "Retorno Aragón Moreno #21",
   colonia: "Col. Altares Franciscanos III Sección",
   ciudad: "Hermosillo, Sonora, México",
-  telefono: "[PLACEHOLDER_TELEFONO]", // TODO: Reemplazar con número real
+  telefono: "+52 662 155 3087",
   email: "contacto@corebase7.com",
 };
 
