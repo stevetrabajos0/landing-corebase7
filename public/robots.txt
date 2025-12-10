@@ -1,0 +1,8 @@
+# Robots.txt para corebase7.com
+# https://corebase7.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://corebase7.com/sitemap.xml

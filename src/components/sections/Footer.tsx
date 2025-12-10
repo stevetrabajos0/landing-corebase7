@@ -2,7 +2,18 @@
 
 import { Container } from "@/components/shared/Container";
 import { Logo } from "@/components/shared/Logo";
-import { Github, Twitter, Linkedin } from "lucide-react";
+import { Github, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+
+// Datos de la empresa para verificaciones Meta/Twilio
+const empresaInfo = {
+  nombreLegal: "FORTUMDIGITAL S.A.S. de C.V.",
+  nombreComercial: "corebase7",
+  direccion: "Retorno Aragón Moreno #21",
+  colonia: "Col. Altares Franciscanos III Sección",
+  ciudad: "Hermosillo, Sonora, México",
+  telefono: "[PLACEHOLDER_TELEFONO]", // TODO: Reemplazar con número real
+  email: "contacto@corebase7.com",
+};
 
 const footerLinks = {
   productos: [
@@ -18,9 +29,8 @@ const footerLinks = {
     { label: "Changelog", href: "#" },
   ],
   legal: [
-    { label: "Privacidad", href: "#" },
-    { label: "Términos", href: "#" },
-    { label: "Cookies", href: "#" },
+    { label: "Privacidad", href: "/privacidad" },
+    { label: "Términos", href: "/terminos" },
   ],
 };
 
@@ -36,7 +46,7 @@ export function Footer() {
       <Container>
         <div className="py-12 sm:py-16">
           {/* Main Footer */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             {/* Brand */}
             <div className="col-span-2 md:col-span-1">
               <Logo className="mb-4" />
@@ -108,13 +118,45 @@ export function Footer() {
                 ))}
               </ul>
             </div>
+
+            {/* Contacto - Info Legal para Meta/Twilio */}
+            <div>
+              <h3 className="font-semibold mb-4 text-sm text-gray-900">Contacto</h3>
+              <ul className="space-y-3 text-sm text-gray-500">
+                <li className="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                  <span>
+                    {empresaInfo.direccion}<br />
+                    {empresaInfo.colonia}<br />
+                    {empresaInfo.ciudad}
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 flex-shrink-0" />
+                  <a href={`tel:${empresaInfo.telefono}`} className="hover:text-gray-900 transition-colors">
+                    {empresaInfo.telefono}
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Mail className="h-4 w-4 flex-shrink-0" />
+                  <a href={`mailto:${empresaInfo.email}`} className="hover:text-gray-900 transition-colors">
+                    {empresaInfo.email}
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          {/* Bottom */}
+          {/* Bottom - Con nombre legal */}
           <div className="mt-12 pt-8 border-t border-gray-200">
-            <p className="text-sm text-gray-400 text-center">
-              © {new Date().getFullYear()} corebase7. Todos los derechos reservados.
-            </p>
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+              <p className="text-sm text-gray-400">
+                © {new Date().getFullYear()} {empresaInfo.nombreLegal}
+              </p>
+              <p className="text-xs text-gray-400">
+                Operando como {empresaInfo.nombreComercial}
+              </p>
+            </div>
           </div>
         </div>
       </Container>
