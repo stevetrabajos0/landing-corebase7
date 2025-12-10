@@ -52,14 +52,14 @@ const products = [
 
 export function Products() {
   return (
-    <section id="productos" className="py-20 sm:py-32">
+    <section id="productos" className="py-20 sm:py-32 bg-white">
       <Container>
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
             Productos y Casos de Uso
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-gray-500">
             Desde CRMs especializados hasta asistentes personalizados.
             Construye el agente IA que tu negocio necesita.
           </p>
@@ -70,19 +70,19 @@ export function Products() {
           {products.map((product) => (
             <Card
               key={product.title}
-              className="group hover:border-primary/50 transition-colors"
+              className="group hover:border-gray-400 transition-colors bg-white border-gray-200"
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-muted">
-                    <product.icon className="h-6 w-6 text-primary" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gray-100">
+                    <product.icon className="h-6 w-6 text-gray-700" />
                   </div>
-                  <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
+                  <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">
                     {product.status}
                   </span>
                 </div>
-                <CardTitle className="text-xl">{product.title}</CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardTitle className="text-xl text-gray-900">{product.title}</CardTitle>
+                <CardDescription className="text-gray-500">
                   {product.description}
                 </CardDescription>
               </CardHeader>

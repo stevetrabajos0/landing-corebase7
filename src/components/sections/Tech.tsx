@@ -45,14 +45,14 @@ const capabilities = [
 
 export function Tech() {
   return (
-    <section id="tecnologia" className="py-20 sm:py-32 bg-muted/30">
+    <section id="tecnologia" className="py-20 sm:py-32 bg-gray-50">
       <Container>
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
             Tecnología de Punta
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-gray-500">
             Infraestructura robusta construida para escalar.
             Todo lo que necesitas para agentes IA en producción.
           </p>
@@ -63,24 +63,24 @@ export function Tech() {
           {capabilities.map((cap) => (
             <div key={cap.title} className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                  <cap.icon className="h-5 w-5 text-primary" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100">
+                  <cap.icon className="h-5 w-5 text-gray-700" />
                 </div>
               </div>
               <div>
-                <h3 className="font-semibold mb-1">{cap.title}</h3>
-                <p className="text-sm text-muted-foreground">{cap.description}</p>
+                <h3 className="font-semibold mb-1 text-gray-900">{cap.title}</h3>
+                <p className="text-sm text-gray-500">{cap.description}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Tech Stack */}
-        <div className="mt-16 pt-16 border-t border-border">
-          <p className="text-center text-sm text-muted-foreground mb-6">
+        <div className="mt-16 pt-16 border-t border-gray-200">
+          <p className="text-center text-sm text-gray-400 mb-6">
             Construido con
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 text-muted-foreground">
+          <div className="flex flex-wrap items-center justify-center gap-8 text-gray-400">
             <span className="font-mono text-sm">Next.js 15</span>
             <span className="font-mono text-sm">TypeScript</span>
             <span className="font-mono text-sm">PostgreSQL</span>

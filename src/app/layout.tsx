@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AgentsAI | Plataforma de Agentes IA Conversacionales",
-  description: "Construye chatbots inteligentes, asistentes de voz y automatizaciones con IA. Multi-canal, multi-tenant, listo para producción.",
+  title: "corebase7 | Infraestructura para Agentes IA",
+  description: "Plataforma de infraestructura para construir agentes IA conversacionales. Multi-canal, multi-tenant, listo para producción.",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="dark">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
