@@ -31,8 +31,8 @@ export function Navbar() {
             Contacto
           </a>
         </div>
-        <Button size="sm" className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-6">
-          Solicitar Demo
+        <Button size="sm" className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-6" asChild>
+          <a href="https://app.corebase7.com">Iniciar Sesión</a>
         </Button>
       </Container>
     </nav>
@@ -65,9 +65,11 @@ export function Hero() {
 
             {/* CTAs */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-8 gap-2">
-                Solicitar Demo
-                <ArrowRight className="h-4 w-4" />
+              <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-8 gap-2" asChild>
+                <a href="https://app.corebase7.com">
+                  Iniciar Sesión
+                  <ArrowRight className="h-4 w-4" />
+                </a>
               </Button>
               <Button size="lg" variant="outline" className="rounded-full px-8 border-gray-300 text-gray-700 hover:bg-gray-50">
                 Ver Casos de Uso
