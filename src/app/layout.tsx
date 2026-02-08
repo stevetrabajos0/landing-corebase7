@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Platform | Infraestructura para Agentes IA",
+  title: "Corebase7 | Infraestructura para Agentes IA",
   description: "Plataforma de infraestructura para construir agentes IA conversacionales. Multi-canal, multi-tenant, listo para producción.",
 };
 

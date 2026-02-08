@@ -7,7 +7,7 @@ import { Github, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 // Datos de la empresa para verificaciones Meta/Twilio
 const empresaInfo = {
   nombreLegal: "FORTUMDIGITAL S.A.S. de C.V.",
-  nombreComercial: "AI Platform",
+  nombreComercial: "Corebase7",
   direccion: "Retorno Aragón Moreno #21",
   colonia: "Col. Altares Franciscanos III Sección",
   ciudad: "Hermosillo, Sonora, México",

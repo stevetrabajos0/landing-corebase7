@@ -4,13 +4,13 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Términos de Servicio | AI Platform",
+  title: "Términos de Servicio | Corebase7",
   description: "Términos y condiciones de uso de los servicios de FORTUMDIGITAL S.A.S. de C.V.",
 };
 
 const empresaInfo = {
   nombreLegal: "FORTUMDIGITAL S.A.S. de C.V.",
-  nombreComercial: "AI Platform",
+  nombreComercial: "Corebase7",
   direccion: "Retorno Aragón Moreno #21, Col. Altares Franciscanos III Sección, Hermosillo, Sonora, México",
   email: "contacto@corebase7.com",
   jurisdiccion: "Hermosillo, Sonora, México",
