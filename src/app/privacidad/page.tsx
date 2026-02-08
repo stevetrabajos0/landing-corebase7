@@ -4,13 +4,13 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidad | corebase7",
+  title: "Política de Privacidad | AI Platform",
   description: "Política de privacidad y protección de datos personales de FORTUMDIGITAL S.A.S. de C.V.",
 };
 
 const empresaInfo = {
   nombreLegal: "FORTUMDIGITAL S.A.S. de C.V.",
-  nombreComercial: "corebase7",
+  nombreComercial: "AI Platform",
   direccion: "Retorno Aragón Moreno #21, Col. Altares Franciscanos III Sección, Hermosillo, Sonora, México",
   email: "contacto@corebase7.com",
 };

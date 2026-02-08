@@ -13,7 +13,7 @@ export function Logo({ className, showText = true }: LogoProps) {
         <Layers className="h-5 w-5 text-white" />
       </div>
       {showText && (
-        <span className="text-xl font-bold tracking-tight text-gray-900">corebase7</span>
+        <span className="text-xl font-bold tracking-tight text-gray-900">AI Platform</span>
       )}
     </div>
   );
